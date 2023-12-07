@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<style>
+     #main {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     #main input {
+          display: flex;
+          height: 2vw;
+          width: 15vw;
+     }
+
+     #main button {
+          padding: .5vw 4vw;
+          margin-top: 2vw;
+          background-color: blue;
+          color: #ffF;
+          border: none;
+          border-radius: .5vw;
+     }
+</style>
+
+<body>
+     <div id="main">
+          <div id="mid">
+               <div class="mid0">
+                    <div id="new">
+                         <h2>Login Pages</h2>
+                    </div>
+                    <form action="/login" method="post" autocomplete="off">
+                         <input type="text" name="username" placeholder="username" required><br>
+                         <input type="password" name="password" placeholder="password" required>
+                         <div id="new">
+                              <button>Login</button>
+                              <a href="/register">Create Account</a>
+                         </div>
+                    </form>
+               </div>
+          </div>
+     </div>
+     <script src="/javascripts/profile.js"></script>
+</body>
+
+</html>

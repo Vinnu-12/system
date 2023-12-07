@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     .main {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          line-height: 2vw;
+     }
+
+     button {
+          margin-top: 1.1vw;
+          height: 3vw;
+          font-size: 1.1vw;
+          width: 10vw;
+          background-color: blue;
+          color: #fff;
+          border: none;
+          border-radius: 2vw;
+     }
+</style>
+
+<body>
+     <div class="main">
+          <h1>Set a new Reminder</h1>
+          <form action="/add" method="post" autocomplete="off">
+               Select a date : <input type="date" name="date" required><br>
+               <!-- <h3>Subject</h3> -->
+               Subject: <select name="subject" id="">
+                    <option value="1">Urgent Task</option>
+                    <option value="1">Profisional Work</option>
+                    <option value="1">Persnal Work</option>
+               </select><br>
+               Add Discription <textarea name="textarea" required></textarea> <br>
+
+               <button>Confirm</button>
+               <button><a href="/profile">Back</a></button>
+               <a id="pro" href="logout">LogOut</a>
+          </form>
+     </div>
+</body>
+
+</html>

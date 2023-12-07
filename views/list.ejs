@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     .main{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     button{
+          height: 2vw;
+          width: 6vw;
+          background-color: blue;
+          border: none;
+          border-radius: 2vw;
+          color: #fff;
+     } a{
+          color: #fff;
+          text-decoration: none;
+     }
+     #log{
+          color: black;
+          padding-left: 5vw;
+     }
+</style>
+<body>
+     <div class="main">
+          <% data.forEach(function(acc){ %>
+               <div class="ProductMain">
+                      <div class="multiproduct">
+                       <h1>Date : <%= acc.date  %></h1>
+                       <h1>Subject : <%= acc.subject  %></h1>
+                       <h1>Discription : <%= acc.textarea  %></h1>
+                       <h1>Email : <%= acc.email  %></h1>
+                       <h1>Mobile : <%= acc.mobile  %></h1>
+                       <h1>sms : <%= acc.sms  %></h1>
+                      <button><a href="/delete/<%= acc._id %>">Delete</a></button>
+                      <button><a href="/profile">back</a></button>
+                      <button><a href="/update">update</a></button>
+                      <a id="log" href="logout">LogOut</a>
+               </div>
+             <% }) %>
+     </div>
+</body>
+</html>
